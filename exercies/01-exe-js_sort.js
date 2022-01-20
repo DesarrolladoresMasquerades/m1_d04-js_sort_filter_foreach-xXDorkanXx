@@ -4,11 +4,13 @@
 // DO NOT mutate the original array
 const arrOfStrings = ['cat', 'wolf', 'yo', 'animal'];
 
-function sortByLength(word1, word2){
-   return word1.length - word2.length;
-};
 
 const longestStr = (arr) => {
+   
+   function sortByLength(word1, word2){
+      return word1.length - word2.length;
+   };
+   
    return arr.sort(sortByLength);
 }
 
@@ -44,11 +46,13 @@ const people = [
   { name: 'Bill', age: 19 }
 ];
 
-function sortPeopleByAge(person1, person2){
-   return parseInt(person1.age) - parseInt(person2.age);
-};
 
 const sortByAge = (arr) => {
+   
+   function sortPeopleByAge(person1, person2){
+      return parseInt(person1.age) - parseInt(person2.age);
+   };
+   
    return arr.sort(sortPeopleByAge);
 }
 
